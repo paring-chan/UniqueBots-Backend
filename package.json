@@ -1,0 +1,13 @@
+{
+  "name": "uniquebots-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pikokr/uniquebots-backend",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "dev": "nodemon src"
+  }
+}
