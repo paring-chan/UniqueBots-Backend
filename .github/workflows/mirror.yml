@@ -1,0 +1,14 @@
+on: [push]
+
+
+jobs:
+  mirror:
+    if: github.repository == 'pikokr/UniqueBots-Backend'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: spyoungtech/mirror-action@master
+        with:
+          REMOTE: 'https://github.com/UniqueCodeGit/UniqueBots-Backend.git'
+          GIT_USERNAME: pikokr
+          GIT_PASSWORD: ${{ secrets.ACCESS_TOKEN }}
