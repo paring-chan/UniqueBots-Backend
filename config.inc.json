@@ -1,0 +1,8 @@
+{
+  "database": "mongodb://localhost/uniquebots",
+  "oauth2": {
+    "clientID": "",
+    "clientSecret": "",
+    "authCallback": ""
+  }
+}
