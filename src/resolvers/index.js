@@ -1,3 +1,4 @@
 module.exports = {
-    Mutation: require('./Mutation')
+    Mutation: require('./Mutation'),
+    Query: require('./Query')
 }

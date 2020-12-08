@@ -2,6 +2,13 @@ type Mutation {
     login(code: String!): String
 }
 
+type User {
+    id: String!
+    username: String!
+    discriminator: String!
+    tag: String!
+}
+
 type Query {
-    test: String
+    me: User
 }
