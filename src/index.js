@@ -20,18 +20,22 @@ const app = express()
 app.use(cors())
 
 const apollo = new ApolloServer({
-    typeDefs, resolvers, context: context => {
+    typeDefs, resolvers, context: async context => {
         const token = context.req.headers.authorization
         const res = {}
         if (!token) res.user = null
         else {
             let user
             try {
-                user=jwt.verify(token, config.jwtSecret)
-            } catch {
+                const meta = jwt.verify(token.slice('Bearer '.length), config.jwtSecret)
+                user= {
+                    meta
+                }
+                user.meta.tag = user.meta.username + '#' + user.meta.discriminator
+            } catch(e) {
                 user = null
             }
-            res.user = null
+            res.user = user
         }
         return res
     }

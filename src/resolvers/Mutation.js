@@ -30,11 +30,11 @@ module.exports = {
 
         const tokens = await res.json()
 
-        const result = await safeFetch('https://discord.com/api/v8/users/@me', {
+        const result = await (await safeFetch('https://discord.com/api/v8/users/@me', {
             headers: {
                 Authorization: `${tokens.token_type} ${tokens.access_token}`
             }
-        })
+        })).json()
 
         return jwt.sign(result, config.jwtSecret)
     }

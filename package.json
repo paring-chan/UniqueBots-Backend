@@ -5,6 +5,7 @@
   "repository": "https://github.com/pikokr/uniquebots-backend",
   "license": "MIT",
   "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/node-fetch": "^2.5.7",
     "nodemon": "^2.0.6"
   },
