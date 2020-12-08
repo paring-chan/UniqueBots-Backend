@@ -1,6 +1,7 @@
 const config = require('../../config.json')
 const safeFetch = require('../util/rateLimitHandle')
 const jwt = require('jsonwebtoken')
+const User = require("../models/User");
 
 module.exports = {
     login: async (_, {code}) => {
@@ -35,6 +36,12 @@ module.exports = {
                 Authorization: `${tokens.token_type} ${tokens.access_token}`
             }
         })).json()
+
+        if (!await User.findOne({id: result.id})) {
+            const u = new User()
+            u.id = result.id
+            await u.save()
+        }
 
         return jwt.sign(result, config.jwtSecret)
     }

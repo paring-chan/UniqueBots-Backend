@@ -5,5 +5,8 @@
     "clientSecret": "",
     "authCallback": ""
   },
-  "jwtSecret": ""
+  "jwtSecret": "",
+  "internal": {
+    "port": 1223
+  }
 }

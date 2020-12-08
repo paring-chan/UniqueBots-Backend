@@ -7,6 +7,8 @@ type User {
     username: String!
     discriminator: String!
     tag: String!
+    avatarURL: String!
+    admin: Boolean!
 }
 
 type Query {

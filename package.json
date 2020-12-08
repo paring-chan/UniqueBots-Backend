@@ -7,6 +7,7 @@
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.0",
     "@types/node-fetch": "^2.5.7",
+    "@types/redis": "^2.8.28",
     "nodemon": "^2.0.6"
   },
   "scripts": {
@@ -20,6 +21,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.4",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "redis": "^3.0.2"
   }
 }

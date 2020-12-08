@@ -14,6 +14,7 @@ const express = require('express')
 const config = require('../config.json')
 
 const cors = require('cors')
+const User = require("./models/User");
 
 const app = express()
 
@@ -28,11 +29,19 @@ const apollo = new ApolloServer({
             let user
             try {
                 const meta = jwt.verify(token.slice('Bearer '.length), config.jwtSecret)
-                user= {
+
+                const data = await User.findOne({id: meta.id})
+
+                if (!data) return null
+
+                user = {
                     meta
                 }
+
                 user.meta.tag = user.meta.username + '#' + user.meta.discriminator
-            } catch(e) {
+                user.meta.avatarURL = user.meta.avatar ? `https://cdn.discordapp.com/avatars/${user.meta.id}/${user.meta.avatar}` : 'https://cdn.discord.app.com/embed/avatars/' + user.meta.discriminator
+                user.meta.admin = data.admin
+            } catch (e) {
                 user = null
             }
             res.user = user
@@ -47,4 +56,6 @@ apollo.applyMiddleware({app})
 mongoose.connect(config.database, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(() => app.listen(1234, () => console.log('Listening')))
+}).then(() => app.listen(1234, () => {
+    console.log('Listening')
+}))
