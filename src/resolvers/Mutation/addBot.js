@@ -35,6 +35,8 @@ module.exports = loginRequired(async (parent, args, ctx) => {
 
     const bot = new Bot()
 
+    bot.owner = ctx.user.meta.id
+
     bot.id = args.id
     bot.description = args.description.slice(0,1500)
     bot.brief = args.brief.slice(0,50)

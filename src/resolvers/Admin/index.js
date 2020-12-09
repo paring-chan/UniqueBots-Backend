@@ -17,11 +17,8 @@ module.exports = {
 
         return {result: res, pages: chunks.length}
     },
-    judges: async (parent, {page=1, search='', pending}) => {
-        const chunks = _.chunk(pending ? await Judge.find({pending: true}) : await Judge.find(), 18)
-
-        let res = chunks[page-1] || []
-
-        return {result: res, pages: chunks.length}
-    }
+    judges: async () => {
+        return Judge.find({pending: true})
+    },
+    judge: async (parent, {id}) => Judge.findOne({id, pending: true})
 }

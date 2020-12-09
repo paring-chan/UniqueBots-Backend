@@ -17,6 +17,8 @@ type Bot {
     tag: String
     guilds: Int
     status: String!
+    brief: String!
+    description: String!
 }
 
 type AdminBot {
@@ -33,22 +35,18 @@ type AdminBots {
     pages: Int!
 }
 
-type AdminJudges {
-    result: [AdminJudge]!
-    pages: Int!
-}
-
 type AdminJudge {
     approve : Boolean
     deny(reason: String!): Boolean
     id: String!
     requester: String!
     approved: Boolean!
+    bot: AdminBot
 }
 
 type Admin {
     bots: AdminBots!
-    judges(pending: Boolean): AdminJudges!
+    judges(pending: Boolean): [AdminJudge]!
     judge(id: String!): AdminJudge
 }
 

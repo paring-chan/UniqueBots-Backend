@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Judge = require("./Judge");
 
 const schema = new mongoose.Schema({
     id: {
@@ -20,6 +21,14 @@ const schema = new mongoose.Schema({
         required: true
     },
     description: {
+        type: String,
+        required: true
+    },
+    invite: {
+        type: String,
+        default: doc => `https://discord.com/api/oauth2/authorize?client_id=${doc}&scope=bot&permissions=0`
+    },
+    owner: {
         type: String,
         required: true
     }
