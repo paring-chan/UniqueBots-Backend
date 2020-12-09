@@ -1,0 +1,12 @@
+[
+  {
+    "id": "admin",
+    "icon": "Settings",
+    "name": "관리자"
+  },
+  {
+    "id": "system_developer",
+    "icon": "Build",
+    "name": "시스템 개발자"
+  }
+]

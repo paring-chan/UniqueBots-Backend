@@ -3,6 +3,12 @@ type Mutation {
     addBot(id: String!, brief: String!, description: String!): Boolean
 }
 
+type Badge {
+    id: String!
+    icon: String!
+    name: String!
+}
+
 type User {
     id: String!
     username: String!
@@ -10,6 +16,7 @@ type User {
     tag: String!
     avatarURL: String!
     admin: Boolean!
+    badges: [Badge]!
 }
 
 type Bot {
@@ -48,4 +55,5 @@ type Admin {
 type Query {
     me: User
     admin: Admin
+    user(id: String!): User
 }

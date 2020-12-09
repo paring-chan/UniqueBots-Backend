@@ -44,6 +44,10 @@ module.exports = async (_, {code}) => {
 
     const u = await User.findOne({id: result.id})
 
+    for (const key in result) {
+        u[key] = result[key]
+    }
+
     u.tag = result.username + '#' + result.discriminator
     await u.save()
 

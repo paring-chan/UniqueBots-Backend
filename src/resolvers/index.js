@@ -2,5 +2,6 @@ module.exports = {
     Mutation: require('./Mutation'),
     Query: require('./Query'),
     Admin: require('./Admin'),
-    AdminJudge: require('./AdminJudge')
+    AdminJudge: require('./AdminJudge'),
+    User: require('./User')
 }

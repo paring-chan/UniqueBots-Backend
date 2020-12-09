@@ -11,6 +11,13 @@ const schema = new mongoose.Schema({
     },
     tag: {
         type: String
+    },
+    username: String,
+    discriminator: String,
+    avatar: String,
+    badges: {
+        type: Array,
+        default: []
     }
 })
 
