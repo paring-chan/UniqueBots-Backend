@@ -1,3 +1,4 @@
 module.exports = {
-    me: require('./me')
+    me: require('./me'),
+    admin: require('../Admin/main')
 }

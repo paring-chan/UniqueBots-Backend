@@ -11,6 +11,23 @@ type User {
     admin: Boolean!
 }
 
+type Bot {
+    id: String!
+    tag: String
+    guilds: Int
+}
+
+type AdminBots {
+    id: String!
+    tag: String
+    approved: Boolean
+}
+
+type Admin {
+    bots: [AdminBots]
+}
+
 type Query {
     me: User
+    admin: Admin
 }
