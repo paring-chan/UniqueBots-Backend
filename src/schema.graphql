@@ -30,11 +30,6 @@ type AdminBot {
     description: String!
 }
 
-type AdminBots {
-    result: [AdminBot]!
-    pages: Int!
-}
-
 type AdminJudge {
     approve : Boolean
     deny(reason: String!): Boolean
@@ -45,7 +40,7 @@ type AdminJudge {
 }
 
 type Admin {
-    bots: AdminBots!
+    bots: [AdminBot]!
     judges(pending: Boolean): [AdminJudge]!
     judge(id: String!): AdminJudge
 }
