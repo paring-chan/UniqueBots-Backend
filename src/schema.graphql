@@ -15,16 +15,18 @@ type Bot {
     id: String!
     tag: String
     guilds: Int
+    status: String!
 }
 
-type AdminBots {
+type AdminBot {
     id: String!
     tag: String
-    approved: Boolean
+    approved: Boolean!
+    status: String!
 }
 
 type Admin {
-    bots: [AdminBots]
+    bots: [AdminBot]
 }
 
 type Query {

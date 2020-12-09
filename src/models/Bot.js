@@ -8,6 +8,11 @@ const schema = new mongoose.Schema({
     approved: {
         type: Boolean,
         default: false
+    },
+    tag: {
+        type: String,
+        required: false,
+        default: null
     }
 })
 
