@@ -17,6 +17,7 @@ type User {
     avatarURL: String!
     admin: Boolean!
     badges: [Badge]!
+    bots(page: Int!): PaginatedBotList!
 }
 
 type Bot {
@@ -44,6 +45,11 @@ type AdminJudge {
     requester: String!
     approved: Boolean!
     bot: AdminBot
+}
+
+type PaginatedBotList {
+    pages: Int!
+    result: [Bot]!
 }
 
 type Admin {

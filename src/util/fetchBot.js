@@ -7,12 +7,12 @@ module.exports = async bot => {
             `)
     if (tag !== null && tag !== bot.tag) {
         bot.tag = tag
-        await bot.save()
     }
     bot.tag = bot.tag || null
     bot.approved = bot.approved || false
     bot.status = await evaluate(`
             client.users.cache.get(${JSON.stringify(bot.id.toString())})?.presence?.status
             `) || 'unknown'
+    await bot.save()
     return bot
 }
