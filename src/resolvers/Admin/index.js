@@ -5,7 +5,7 @@ const Judge = require("../../models/Judge");
 
 module.exports = {
     bots: async () => {
-        return Bot.find().then(async res => {
+        return Bot.find({approved:true}).then(async res => {
             for (const i of res) {
                 await fetchBot(i)
             }

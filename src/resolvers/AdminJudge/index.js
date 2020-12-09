@@ -21,9 +21,7 @@ module.exports = {
 
         const bot = await Bot.findOne({id: parent.id})
 
-        bot.false = true
-
-        await bot.save()
+        await Bot.findByIdAndDelete(bot._id)
 
         parent.pending = false
 

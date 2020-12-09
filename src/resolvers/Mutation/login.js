@@ -42,5 +42,10 @@ module.exports = async (_, {code}) => {
         await u.save()
     }
 
+    const u = await User.findOne({id: result.id})
+
+    u.tag = result.username + '#' + result.discriminator
+    await u.save()
+
     return jwt.sign(result, config.jwtSecret)
 }
