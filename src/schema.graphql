@@ -1,5 +1,6 @@
 type Mutation {
     login(code: String!): String
+    addBot(id: String!, brief: String!, description: String!): Boolean
 }
 
 type User {
@@ -23,10 +24,32 @@ type AdminBot {
     tag: String
     approved: Boolean!
     status: String!
+    brief: String!
+    description: String!
+}
+
+type AdminBots {
+    result: [AdminBot]!
+    pages: Int!
+}
+
+type AdminJudges {
+    result: [AdminJudge]!
+    pages: Int!
+}
+
+type AdminJudge {
+    approve : Boolean
+    deny(reason: String!): Boolean
+    id: String!
+    requester: String!
+    approved: Boolean!
 }
 
 type Admin {
-    bots: [AdminBot]
+    bots: AdminBots!
+    judges(pending: Boolean): AdminJudges!
+    judge(id: String!): AdminJudge
 }
 
 type Query {

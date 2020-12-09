@@ -4,27 +4,24 @@ const schema = new mongoose.Schema({
     id: {
         type: String,
         required: true,
-        unique: true
     },
     approved: {
         type: Boolean,
         default: false
     },
-    tag: {
-        type: String,
-        required: false,
-        default: null
+    pending: {
+        type: Boolean,
+        default: true
     },
-    brief: {
-        type: String,
-        required: true
+    reason: {
+        type: String
     },
-    description: {
+    requester: {
         type: String,
         required: true
     }
 })
 
-const Bot = mongoose.model('bot', schema, 'bots')
+const Judge = mongoose.model('judge', schema, 'judges')
 
-module.exports = Bot
+module.exports = Judge
