@@ -50,10 +50,9 @@ module.exports = {
         await evaluate(`
         (async () => {
             const bot = client.guilds.cache.get(config.guild).members.cache.get(${JSON.stringify(parent.id)})
-        if (!bot) return
-        await bot.kick('봇이 승인 거부되었습니다.')
+        if (bot) return await bot.kick('봇이 승인 거부되었습니다.').catch(e=>null)
         const requester = client.guilds.cache.get(config.guild).members.cache.get(${JSON.stringify(parent.requester)})
-        if (requester) await requester.user.send(\`봇 \${bot.user.tag}이(가) 승인 거부되었습니다.\n사유: \` + ${JSON.stringify(reason)}).catch(e=>null)
+        if (requester) await requester.user.send(\`봇 \${bot?.user?.tag}이(가) 승인 거부되었습니다.\n사유: \` + ${JSON.stringify(reason)}).catch(e=>null)
         })()
         `)
 
