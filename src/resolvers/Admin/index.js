@@ -13,6 +13,13 @@ module.exports = {
             return res
         })
     },
+    bot: async (parent, {id}) => {
+        return Bot.findOne({id, approved: true}).then(async res => {
+            if (!res) return null
+            await fetchBot(res)
+            return res
+        })
+    },
     judges: async () => {
         return Judge.find({pending: true})
     },

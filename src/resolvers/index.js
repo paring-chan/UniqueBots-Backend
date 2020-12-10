@@ -4,5 +4,6 @@ module.exports = {
     Admin: require('./Admin'),
     AdminJudge: require('./AdminJudge'),
     User: require('./User'),
-    AdminUser: require('./AdminUser')
+    AdminUser: require('./AdminUser'),
+    AdminBot: require('./AdminBot')
 }

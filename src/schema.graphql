@@ -37,6 +37,7 @@ type AdminBot {
     status: String!
     brief: String!
     description: String!
+    delete: Boolean!
 }
 
 type AdminUser {
@@ -64,7 +65,8 @@ type Admin {
     judges(pending: Boolean): [AdminJudge]!
     judge(id: String!): AdminJudge
     users: [AdminUser]!
-    user(id: String): AdminUser
+    user(id: String!): AdminUser
+    bot(id: String!): AdminBot
 }
 
 type Query {
