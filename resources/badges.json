@@ -8,5 +8,10 @@
     "id": "system_developer",
     "icon": "Build",
     "name": "시스템 개발자"
+  },
+  {
+    "id": "bot_developer",
+    "icon": "Code",
+    "name": "봇 개발자"
   }
 ]

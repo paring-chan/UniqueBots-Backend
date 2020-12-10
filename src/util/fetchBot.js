@@ -13,6 +13,9 @@ module.exports = async bot => {
     bot.status = await evaluate(`
             client.users.cache.get(${JSON.stringify(bot.id.toString())})?.presence?.status
             `) || 'unknown'
+    bot.avatar = await evaluate(`
+            client.users.cache.get(${JSON.stringify(bot.id.toString())})?.displayAvatarURL()
+            `) || bot.avatar
     await bot.save()
     return bot
 }

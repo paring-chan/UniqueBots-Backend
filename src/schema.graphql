@@ -27,6 +27,7 @@ type Bot {
     status: String!
     brief: String!
     description: String!
+    avatar: String
 }
 
 type AdminBot {

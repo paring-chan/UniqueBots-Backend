@@ -9,11 +9,17 @@ module.exports = {
         if (parent.admin) {
             badges.push('admin')
         }
+
+        if (await Bot.findOne({owner: parent.id})) {
+            badges.push('bot_developer')
+        }
+
         const result = []
         for (const badge of badges) {
             const b = await Badge.findOne({id: badge})
             if (b) result.push(b)
         }
+
         return result
     },
     bots: async (parent, {page=1}) => {
