@@ -76,4 +76,6 @@ type Query {
     me: User
     admin: Admin
     user(id: String!): User
+    bot(id: String!): Bot
+    bots(page: String): PaginatedBotList!
 }
