@@ -1,6 +1,6 @@
 type Mutation {
     login(code: String!): String
-    addBot(id: String!, brief: String!, description: String!): Boolean
+    addBot(id: String!, brief: String!, description: String!, prefix: String!, invite: String): Boolean
 }
 
 type Badge {
@@ -28,6 +28,8 @@ type Bot {
     brief: String!
     description: String!
     avatar: String
+    prefix: String!
+    invite: String!
 }
 
 type AdminBot {
@@ -38,6 +40,7 @@ type AdminBot {
     brief: String!
     description: String!
     delete: Boolean!
+    prefix: String!
 }
 
 type AdminUser {

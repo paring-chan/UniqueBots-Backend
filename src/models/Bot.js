@@ -34,6 +34,11 @@ const schema = new mongoose.Schema({
     },
     avatar: {
         type: String
+    },
+    prefix: {
+        type: String,
+        required: true,
+        default: '!'
     }
 })
 

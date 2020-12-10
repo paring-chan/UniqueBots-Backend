@@ -40,6 +40,8 @@ module.exports = loginRequired(async (parent, args, ctx) => {
     bot.id = args.id
     bot.description = args.description.slice(0,1500)
     bot.brief = args.brief.slice(0,50)
+    bot.invite = args.invite
+    bot.prefix = args.prefix
 
     await bot.save()
 
