@@ -39,6 +39,12 @@ type AdminBot {
     description: String!
 }
 
+type AdminUser {
+    user: User!
+    promote: Boolean!
+    removeMod: Boolean!
+}
+
 type AdminJudge {
     approve : Boolean
     deny(reason: String!): Boolean
@@ -57,6 +63,8 @@ type Admin {
     bots: [AdminBot]!
     judges(pending: Boolean): [AdminJudge]!
     judge(id: String!): AdminJudge
+    users: [AdminUser]!
+    user(id: String): AdminUser
 }
 
 type Query {

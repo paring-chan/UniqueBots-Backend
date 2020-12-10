@@ -3,5 +3,6 @@ module.exports = {
     Query: require('./Query'),
     Admin: require('./Admin'),
     AdminJudge: require('./AdminJudge'),
-    User: require('./User')
+    User: require('./User'),
+    AdminUser: require('./AdminUser')
 }

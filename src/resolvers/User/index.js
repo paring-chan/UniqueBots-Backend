@@ -35,5 +35,6 @@ module.exports = {
             result: chunks[page-1] || [],
             pages: chunks.length
         }
-    }
+    },
+    avatarURL: user => user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}` : 'https://cdn.discord.app.com/embed/avatars/' + user.discriminator
 }
