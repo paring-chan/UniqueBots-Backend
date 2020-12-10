@@ -10,7 +10,7 @@ module.exports = {
             badges.push('admin')
         }
 
-        if (await Bot.findOne({owner: parent.id})) {
+        if (await Bot.findOne({owner: parent.id, approved: true})) {
             badges.push('bot_developer')
         }
 
