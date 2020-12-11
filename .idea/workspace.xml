@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/discord/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -15,8 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.inc.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.inc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/badges.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/badges.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discord/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discord/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middlewares/loginRequired.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/loginRequired.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Audit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Audit.js" afterDir="false" />
@@ -44,14 +43,14 @@
       <change beforePath="$PROJECT_DIR$/src/util/bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/fetchBot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/fetchBot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/rateLimitHandle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/rateLimitHandle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.postcssrc" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.postcssrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/apollo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Bot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Admin/Bots/Bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/LayoutProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/LayoutProvider.jsx" afterDir="false" />
@@ -69,7 +68,7 @@
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Admin/Users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Admin/Users/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Admin/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Oauth2Callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Oauth2Callback.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Profille/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Profille/index.js" afterDir="false" />
@@ -92,7 +91,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../bot" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../frontend" />
   </component>
   <component name="ProjectId" id="1lKHvZcdvMoDiE9fA35QNSz4Rlw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -110,7 +109,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot/commands" />
     <property name="nodejs_interpreter_path" value="wsl://Ubuntu@/home/pikostudio/.nvm/versions/node/v15.3.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="C:\Users\CHINO\Desktop\uniquebots\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -119,6 +118,9 @@
       <recent name="C:\Users\CHINO\Desktop\uniquebots\bot\commands" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\backend\src\models" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots-backend\src\resolvers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src\views\Admin\Bots" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -178,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607339095109</updated>
       <workItem from="1607339096008" duration="7194000" />
-      <workItem from="1607644255145" duration="18427000" />
+      <workItem from="1607644255145" duration="22958000" />
     </task>
     <servers />
   </component>

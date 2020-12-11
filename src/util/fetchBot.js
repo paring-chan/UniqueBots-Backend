@@ -16,6 +16,7 @@ module.exports = async bot => {
     bot.avatar = await evaluate(`
             client.users.cache.get(${JSON.stringify(bot.id.toString())})?.displayAvatarURL()
             `) || bot.avatar
+    bot.invite = bot.invite || `https://discord.com/api/oauth2/authorize?client_id=${bot.id}&scope=bot&permissions=0`
     await bot.save()
     return bot
 }

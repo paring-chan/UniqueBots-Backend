@@ -19,7 +19,6 @@ const verify = async (req, res, next) => {
 }
 
 router.post('/', verify, async (req, res) => {
-    console.log(req.body)
     if (req.body.type === 1) {
         return res.json({
             type: 1

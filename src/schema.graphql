@@ -23,13 +23,14 @@ type User {
 type Bot {
     id: String!
     tag: String
-    guilds: Int
+    guilds: Int!
     status: String!
     brief: String!
     description: String!
     avatar: String
     prefix: String!
     invite: String!
+    locked: Boolean!
 }
 
 type AdminBot {
@@ -79,10 +80,14 @@ type Audit {
     timestamp: String!
 }
 
+enum BotSortUnit {
+    servers
+}
+
 type Query {
     me: User
     admin: Admin
     user(id: String!): User
     bot(id: String!): Bot
-    bots(page: String): PaginatedBotList!
+    bots(page: Int, sort: BotSortUnit): PaginatedBotList!
 }
