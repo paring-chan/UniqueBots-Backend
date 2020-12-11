@@ -26,7 +26,6 @@ const schema = new mongoose.Schema({
     invite: {
         type: String,
         default: doc => `https://discord.com/api/oauth2/authorize?client_id=${doc.id}&scope=bot&permissions=0`,
-        required: true
     },
     owner: {
         type: String,

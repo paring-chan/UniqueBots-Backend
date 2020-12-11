@@ -31,6 +31,8 @@ type Bot {
     prefix: String!
     invite: String!
     locked: Boolean!
+    discordVerified: Boolean!
+    owner: User!
 }
 
 type AdminBot {
