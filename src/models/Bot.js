@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const Judge = require("./Judge");
 
 const schema = new mongoose.Schema({
     id: {

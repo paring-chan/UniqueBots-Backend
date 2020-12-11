@@ -70,6 +70,12 @@ type Admin {
     users: [AdminUser]!
     user(id: String!): AdminUser
     bot(id: String!): AdminBot
+    audits: [Audit]!
+}
+
+type Audit {
+    user: User
+    msg: String!
 }
 
 type Query {

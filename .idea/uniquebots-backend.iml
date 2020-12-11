@@ -8,5 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/node" level="application" />
+    <orderEntry type="module" module-name="UniqueBots-Bot" />
+    <orderEntry type="module" module-name="UniqueBots-Frontend" />
   </component>
 </module>

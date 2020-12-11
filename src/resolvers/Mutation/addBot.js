@@ -1,13 +1,12 @@
 const loginRequired = require('../../middlewares/loginRequired')
 const Bot = require("../../models/Bot");
 const Judge = require("../../models/Judge");
+const Audit = require("../../models/Audit");
 const {ApolloError} = require("apollo-server-errors");
 const {evaluate} = require('../../util/bot')
 
 
 module.exports = loginRequired(async (parent, args, ctx) => {
-    console.log(args)
-
     if (!args.id) throw new ApolloError('id Field required', 'ID_REQUIRED', {
         parameter: 'id'
     })
@@ -21,15 +20,15 @@ module.exports = loginRequired(async (parent, args, ctx) => {
         throw new ApolloError('아이디의 길이는 17-19 사이어야 하고 숫자여야 합니다.')
     }
 
-    if (!await evaluate(`
+    const b = await evaluate(`
         client.users.fetch(${JSON.stringify(args.id)}).then(res => {
-            console.log(res)
-            return res.bot
+            return res
         }).catch(e => {
-            console.error(e)
             return false
         })
-    `)) {
+    `)
+
+    if (!b) {
         throw new ApolloError('입력한 id에 일치하는 봇을 찾을 수 없어요!', 'ERR_INVALID_CLIENT_ID')
     }
 
@@ -57,8 +56,15 @@ module.exports = loginRequired(async (parent, args, ctx) => {
     bot.brief = args.brief.slice(0,50)
     bot.invite = args.invite
     bot.prefix = args.prefix
+    bot.tag = b.tag
 
     await bot.save()
+
+    const audit = new Audit()
+    audit.id = ctx.user.meta.id
+    audit.msg = `봇 ${b.tag}을(를) 등록함`
+
+    await audit.save()
 
     return true
 })

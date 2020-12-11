@@ -2,6 +2,7 @@ const Bot = require("../../models/Bot");
 const fetchBot = require('../../util/fetchBot')
 const Judge = require("../../models/Judge");
 const User = require("../../models/User");
+const Audit = require("../../models/Audit");
 
 
 module.exports = {
@@ -29,5 +30,6 @@ module.exports = {
     },
     user: async (parent, {id}) => {
         return User.findOne({id})
-    }
+    },
+    audits: () => Audit.find()
 }

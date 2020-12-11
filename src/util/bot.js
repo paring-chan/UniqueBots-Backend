@@ -1,7 +1,7 @@
 const config = require('../../config.json')
 
 module.exports.evaluate = async (code) => {
-    return fetch(`http://localhost:${config.internal.port}/evaluate`, {
+    return fetch(`http://${config.internal.host}:${config.internal.port}/evaluate`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
