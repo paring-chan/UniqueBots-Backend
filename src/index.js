@@ -20,6 +20,10 @@ const app = express()
 
 app.use(cors())
 
+app.use(express.json())
+
+app.use('/discord', require('./discord'))
+
 const apollo = new ApolloServer({
     typeDefs, resolvers, context: async context => {
         const token = context.req.headers.authorization

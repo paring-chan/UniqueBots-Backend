@@ -8,6 +8,7 @@
   "jwtSecret": "",
   "internal": {
     "port": 1223,
-    "host": "bot"
+    "host": "bot",
+    "publicKey": ""
   }
 }

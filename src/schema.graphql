@@ -76,6 +76,7 @@ type Admin {
 type Audit {
     user: User
     msg: String!
+    timestamp: String!
 }
 
 type Query {
