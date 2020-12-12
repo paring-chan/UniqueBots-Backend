@@ -36,10 +36,11 @@ router.post('/', verify, async (req, res) => {
 
         if (!user || !user.admin) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '이 명령어는 관리자만 사용 가능합니다.'
+                    content: '이 명령어는 관리자만 사용 가능합니다.',
+                    flags: 1 << 6
                 }
             })
         }
@@ -49,19 +50,21 @@ router.post('/', verify, async (req, res) => {
         const judge = await Judge.findOne({id: id, pending: true})
         if (!bot) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '봇을 찾을 수 없습니다.'
+                    content: '봇을 찾을 수 없습니다.',
+                    flags: 1 << 6
                 }
             })
         }
         if (!judge) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '심사를 찾을 수 없습니다.'
+                    content: '심사를 찾을 수 없습니다.',
+                    flags: 1 << 6
                 }
             })
         }
@@ -83,10 +86,11 @@ router.post('/', verify, async (req, res) => {
         `)
 
         return res.json({
-            type: 4,
+            type: 3,
             data: {
                 tts: false,
-                content: '봇이 승인되었습니다.'
+                content: '봇이 승인되었습니다.',
+                flags: 1 << 6
             }
         })
     } else if (req.body.data.name === 'deny') {
@@ -94,11 +98,12 @@ router.post('/', verify, async (req, res) => {
 
         if (!user || !user.admin) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '이 명령어는 관리자만 사용 가능합니다.'
-                }
+                    content: '이 명령어는 관리자만 사용 가능합니다.',
+                    flags: 1 << 6
+                },
             })
         }
 
@@ -108,20 +113,22 @@ router.post('/', verify, async (req, res) => {
         const judge = await Judge.findOne({id: id, pending: true})
         if (!bot) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '봇을 찾을 수 없습니다.'
-                }
+                    content: '봇을 찾을 수 없습니다.',
+                    flags: 1 << 6
+                },
             })
         }
         if (!judge) {
             return res.json({
-                type: 4,
+                type: 3,
                 data: {
                     tts: false,
-                    content: '심사를 찾을 수 없습니다.'
-                }
+                    content: '심사를 찾을 수 없습니다.',
+                    flags: 1 << 6
+                },
             })
         }
 
@@ -146,10 +153,11 @@ router.post('/', verify, async (req, res) => {
         `)
 
         return res.json({
-            type: 4,
+            type: 3,
             data: {
                 tts: false,
-                content: '봇이 승인 거부되었습니다.'
+                content: '봇이 승인 거부되었습니다.',
+                flags: 1 << 6
             }
         })
     }
