@@ -15,6 +15,7 @@ const config = require('../config.json')
 
 const cors = require('cors')
 const User = require("./models/User");
+const Bot = require("./models/Bot");
 
 const app = express()
 
@@ -47,6 +48,10 @@ const apollo = new ApolloServer({
                 user.meta.admin = data.admin
             } catch (e) {
                 user = null
+                const bot = await Bot.findOne({token: token.slice('Bearer '.length), approved: true})
+                if (bot) {
+                    res.bot = bot
+                }
             }
             res.user = user
         }

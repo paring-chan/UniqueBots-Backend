@@ -7,5 +7,6 @@ module.exports = {
     AdminUser: require('./AdminUser'),
     AdminBot: require('./AdminBot'),
     Audit: require('./Audit'),
-    Bot: require('./Bot')
+    Bot: require('./Bot'),
+    BotAccount: require('./BotAccount')
 }

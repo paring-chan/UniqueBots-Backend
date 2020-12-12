@@ -3,5 +3,6 @@ module.exports = {
     admin: require('../Admin/main'),
     user: require('./user'),
     bot: require('./bot'),
-    bots: require('./bots')
+    bots: require('./bots'),
+    botAccount: require('./botAccount')
 }

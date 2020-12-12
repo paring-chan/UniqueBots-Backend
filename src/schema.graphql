@@ -3,6 +3,15 @@ type Mutation {
     addBot(id: String!, brief: String!, description: String!, prefix: String!, invite: String): Boolean
 }
 
+type Query {
+    me: User
+    admin: Admin
+    user(id: String!): User
+    bot(id: String!): Bot
+    bots(page: Int, sort: BotSortUnit): PaginatedBotList!
+    botAccount: BotAccount
+}
+
 type Badge {
     id: String!
     icon: String!
@@ -19,6 +28,7 @@ type User {
     badges: [Badge]!
     bots(page: Int!): PaginatedBotList!
     bot(id: String!): Bot
+    judges(page: Int): PaginatedJudges
 }
 
 type Bot {
@@ -90,10 +100,19 @@ enum BotSortUnit {
     servers
 }
 
-type Query {
-    me: User
-    admin: Admin
-    user(id: String!): User
-    bot(id: String!): Bot
-    bots(page: Int, sort: BotSortUnit): PaginatedBotList!
+type BotAccount {
+    id: String!
+    guilds(patch: Int): Int!
+}
+
+type PaginatedJudges {
+    pages: Int!
+    items: [Judge]!
+}
+
+type Judge {
+    id: String!
+    approved: Boolean!
+    pending: Boolean!
+    reason: String
 }

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/resolvers/BotAccount/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resolvers/Query/botAccount.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -194,7 +196,7 @@
       <workItem from="1607339096008" duration="7194000" />
       <workItem from="1607644255145" duration="30172000" />
       <workItem from="1607687587958" duration="6392000" />
-      <workItem from="1607734004956" duration="14361000" />
+      <workItem from="1607734004956" duration="18911000" />
     </task>
     <servers />
   </component>
