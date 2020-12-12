@@ -33,6 +33,7 @@ module.exports = {
         bot.invite = args.invite
         bot.prefix = args.prefix
         bot.tag = b.tag
+        bot.lock = args.lock
 
         await bot.save()
 
