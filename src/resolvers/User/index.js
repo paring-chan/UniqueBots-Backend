@@ -36,5 +36,8 @@ module.exports = {
             pages: chunks.length
         }
     },
-    avatarURL: user => user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}` : 'https://cdn.discord.app.com/embed/avatars/' + user.discriminator
+    avatarURL: user => user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}` : 'https://cdn.discord.app.com/embed/avatars/' + user.discriminator,
+    bot: async (parent, {id}) => {
+        return Bot.findOne({id, approved: true}).then(res => fetchBot(res))
+    }
 }

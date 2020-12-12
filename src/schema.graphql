@@ -18,6 +18,7 @@ type User {
     admin: Boolean!
     badges: [Badge]!
     bots(page: Int!): PaginatedBotList!
+    bot(id: String!): Bot
 }
 
 type Bot {
@@ -33,6 +34,7 @@ type Bot {
     locked: Boolean!
     discordVerified: Boolean!
     owner: User!
+    patch(brief: String!, description: String!, prefix: String!, invite: String): Boolean
 }
 
 type AdminBot {

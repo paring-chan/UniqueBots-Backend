@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -47,7 +49,10 @@
       <change beforePath="$PROJECT_DIR$/../frontend/.postcssrc" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.postcssrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/apollo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" afterDir="false" />
@@ -90,9 +95,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="GraphQL File" />
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -128,6 +133,7 @@
       <recent name="C:\Users\CHINO\Desktop\uniquebots-backend\src\resolvers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src\views\ManagePanel\Bot" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src\views\Admin\Bots" />
     </key>
   </component>
@@ -190,7 +196,7 @@
       <workItem from="1607339096008" duration="7194000" />
       <workItem from="1607644255145" duration="30172000" />
       <workItem from="1607687587958" duration="6392000" />
-      <workItem from="1607734004956" duration="1036000" />
+      <workItem from="1607734004956" duration="7205000" />
     </task>
     <servers />
   </component>

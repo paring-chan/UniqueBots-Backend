@@ -17,7 +17,7 @@ module.exports = async bot => {
     bot.avatar = await evaluate(`
             client.users.cache.get(${JSON.stringify(bot.id.toString())})?.displayAvatarURL()
             `) || bot.avatar
-    bot.discordVerified = await evaluate(`client.users.cache.get(${JSON.stringify(bot.id.toString())}).flags.has('VERIFIED_BOT')`)
+    bot.discordVerified = await evaluate(`client.users.cache.get(${JSON.stringify(bot.id.toString())}).flags?.has('VERIFIED_BOT')`)
     if (typeof bot.discordVerified !== 'boolean') {
         bot.discordVerified = false
     }
