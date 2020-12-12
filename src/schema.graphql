@@ -48,6 +48,9 @@ type Bot {
     regenerateToken: Boolean!
     patch(brief: String!, description: String!, prefix: String!, invite: String!, lock: Boolean!, library: String!): Boolean
     library: String!
+    heartCount: Int!
+    toggleHeart: Boolean!
+    heartClicked: Boolean!
 }
 
 type AdminBot {

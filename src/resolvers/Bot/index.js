@@ -4,6 +4,7 @@ const {evaluate} = require('../../util/bot')
 const loginRequired = require('../../middlewares/loginRequired')
 const jwt = require('jsonwebtoken')
 const config = require('../../../config.json')
+const Heart = require("../../models/Heart");
 
 module.exports = {
     owner: parent => parent._owner,
@@ -69,5 +70,21 @@ module.exports = {
         await parent.save()
 
         return true
+    },
+    toggleHeart: async (parent, args, ctx) => {
+        if (!ctx.user) return false
+        if (await Heart.findOne({from: ctx.user.meta.id, to: parent.id})) {
+            await Heart.deleteOne({from: ctx.user.meta.id, to: parent.id})
+        } else {
+            const heart = new Heart()
+            heart.from = ctx.user.meta.id
+            heart.to = parent.id
+            await heart.save()
+        }
+        return true
+    },
+    heartClicked: async (parent, args, ctx) => {
+        if (!ctx.user) return false
+        return Boolean(await Heart.findOne({from: ctx.user.meta.id, to: parent.id}))
     }
 }

@@ -1,3 +1,4 @@
+require('./util/bot')
 require('graphql-import-node')
 const mongoose = require('mongoose')
 global.fetch = require('node-fetch')
