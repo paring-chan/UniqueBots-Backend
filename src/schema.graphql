@@ -34,6 +34,8 @@ type Bot {
     locked: Boolean!
     discordVerified: Boolean!
     owner: User!
+    token: String
+    regenerateToken: Boolean!
     patch(brief: String!, description: String!, prefix: String!, invite: String!, lock: Boolean!): Boolean
 }
 

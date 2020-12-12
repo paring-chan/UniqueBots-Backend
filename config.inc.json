@@ -10,5 +10,6 @@
     "port": 1223,
     "host": "bot",
     "publicKey": ""
-  }
+  },
+  "botTokenSecret": ""
 }

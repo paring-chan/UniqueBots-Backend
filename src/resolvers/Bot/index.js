@@ -2,6 +2,8 @@ const Audit = require("../../models/Audit");
 const {ApolloError} = require("apollo-server-errors");
 const {evaluate} = require('../../util/bot')
 const loginRequired = require('../../middlewares/loginRequired')
+const jwt = require('jsonwebtoken')
+const config = require('../../../config.json')
 
 module.exports = {
     owner: parent => parent._owner,
@@ -41,5 +43,29 @@ module.exports = {
         await audit.save()
 
         return true
-    })
+    }),
+    token: async (parent, args, ctx) => {
+        if (ctx.user.meta.id !== parent.owner) return null
+
+        if (!parent.token) {
+            parent.token = jwt.sign({id: parent.id}, config.botTokenSecret, {
+                expiresIn: (1000 * 60 * 60 * 24 * 365)
+            })
+        }
+
+        await parent.save()
+
+        return parent.token
+    },
+    regenerateToken: async (parent, args, ctx) => {
+        if (ctx.user.meta.id !== parent.owner) return false
+
+        parent.token = jwt.sign({id: parent.id}, config.botTokenSecret, {
+            expiresIn: (1000 * 60 * 60 * 24 * 365)
+        })
+
+        await parent.save()
+
+        return true
+    }
 }
