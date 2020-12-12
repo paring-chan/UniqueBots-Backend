@@ -78,6 +78,6 @@ module.exports = {
         })
     },
     requester: async (parent) => {
-        return evaluate(`client.users.cache.get(${JSON.stringify(parent.requester)})?.tag || ${JSON.stringify(parent.id)}`)
+        return evaluate(`client.users.cache.get(${JSON.stringify(parent.requester)})?.tag || ${JSON.stringify(parent.requester)}`)
     }
 }

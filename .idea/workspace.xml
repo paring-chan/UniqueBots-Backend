@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/views/Discord.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -50,8 +49,6 @@
       <change beforePath="$PROJECT_DIR$/../frontend/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/apollo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" afterDir="false" />
@@ -79,6 +76,8 @@
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/home.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Oauth2Callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Oauth2Callback.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Profille/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Profille/index.js" afterDir="false" />
@@ -196,7 +195,7 @@
       <workItem from="1607339096008" duration="7194000" />
       <workItem from="1607644255145" duration="30172000" />
       <workItem from="1607687587958" duration="6392000" />
-      <workItem from="1607734004956" duration="7205000" />
+      <workItem from="1607734004956" duration="9062000" />
     </task>
     <servers />
   </component>

@@ -34,7 +34,7 @@ type Bot {
     locked: Boolean!
     discordVerified: Boolean!
     owner: User!
-    patch(brief: String!, description: String!, prefix: String!, invite: String): Boolean
+    patch(brief: String!, description: String!, prefix: String!, invite: String!, lock: Boolean!): Boolean
 }
 
 type AdminBot {
