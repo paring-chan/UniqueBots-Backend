@@ -57,6 +57,7 @@ module.exports = loginRequired(async (parent, args, ctx) => {
     bot.invite = args.invite
     bot.prefix = args.prefix
     bot.tag = b.tag
+    bot.library = args.library
 
     await bot.save()
 

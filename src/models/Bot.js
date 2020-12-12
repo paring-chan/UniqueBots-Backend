@@ -49,6 +49,10 @@ const schema = new mongoose.Schema({
     },
     token: {
         type: String
+    },
+    library: {
+        type: String,
+        default: '기타'
     }
 })
 

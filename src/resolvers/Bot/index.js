@@ -34,6 +34,7 @@ module.exports = {
         bot.prefix = args.prefix
         bot.tag = b.tag
         bot.locked = args.lock
+        bot.library = args.library
 
         await bot.save()
 
