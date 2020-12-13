@@ -10,7 +10,18 @@ module.exports = async (parent, {page=1, sort, queryType, query}) => {
     await Promise.all(bot.map(fetchBot))
     switch (sort) {
         case 'servers':
-            bot.sort((a, b) => b.guilds-a.guilds)
+            bot.sort((a, b) => {
+                if (a.guilds > b.guilds) {
+                    return 1
+                }
+                if (a.guilds === b.guilds) {
+                    if (a.heartCount > b.heartCount) {
+                        return 1
+                    }
+                }
+                return -1
+            })
+            bot.reverse()
             break
         default:
         case 'hearts':
