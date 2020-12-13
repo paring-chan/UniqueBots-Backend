@@ -28,7 +28,7 @@ module.exports = loginRequired(async (parent, args, ctx) => {
         })
     `)
 
-    if (!b) {
+    if (!b || !b.bot) {
         throw new ApolloError('입력한 id에 일치하는 봇을 찾을 수 없어요!', 'ERR_INVALID_CLIENT_ID')
     }
 

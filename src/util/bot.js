@@ -21,5 +21,6 @@ module.exports.evaluate = async (code) => {
 socket.on('eval', data => {
     if (resolvers[data.id]) {
         resolvers[data.id](data.result)
+        delete resolvers[data.id]
     }
 })

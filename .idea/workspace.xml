@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -14,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.inc.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.inc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/badges.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/badges.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/discord/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/discord/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
@@ -48,7 +49,6 @@
       <change beforePath="$PROJECT_DIR$/src/util/bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/fetchBot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/fetchBot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/rateLimitHandle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/rateLimitHandle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.postcssrc" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.postcssrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
@@ -99,14 +99,14 @@
       <list>
         <option value="GraphQL File" />
         <option value="SCSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../uniquebots-js-sdk" />
   </component>
   <component name="ProjectId" id="1lKHvZcdvMoDiE9fA35QNSz4Rlw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -121,16 +121,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.3.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../uniquebots-js-sdk/test/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path" value="wsl://Ubuntu@/home/pikostudio/.nvm/versions/node/v15.3.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
-    <property name="ts.external.directory.path" value="C:\Users\CHINO\Desktop\uniquebots\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\CHINO\Desktop\uniquebots-js-sdk\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CHINO\Desktop\uniquebots-js-sdk\test\src" />
+      <recent name="C:\Users\CHINO\Desktop\uniquebots-js-sdk\test" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\backend\src\models" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\bot\commands" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots-backend\src\resolvers" />
@@ -200,7 +203,8 @@
       <workItem from="1607644255145" duration="30172000" />
       <workItem from="1607687587958" duration="6392000" />
       <workItem from="1607734004956" duration="24523000" />
-      <workItem from="1607771423874" duration="2780000" />
+      <workItem from="1607771423874" duration="9489000" />
+      <workItem from="1607819259645" duration="4764000" />
     </task>
     <servers />
   </component>

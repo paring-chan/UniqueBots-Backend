@@ -25,7 +25,7 @@ module.exports = {
     },
     avatarURL: user => user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}` : 'https://cdn.discord.app.com/embed/avatars/' + user.discriminator,
     bots: async (parent, {page=1}) => {
-        const bots = await Bot.find({owner: parent.id})
+        const bots = await Bot.find({owner: parent.id, approved: true})
 
         for (const bot of bots) {
             await fetchBot(bot)

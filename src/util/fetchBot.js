@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const Heart = require("../models/Heart");
 const {evaluate} = require('./bot')
 
 
@@ -25,6 +26,8 @@ module.exports = async bot => {
     bot.invite = bot.invite || `https://discord.com/api/oauth2/authorize?client_id=${bot.id}&scope=bot&permissions=0`
     await bot.save()
     bot._owner = await User.findOne({id: bot.owner})
+
+    bot.heartCount = await Heart.find({to: bot.id}).then(res=>res.length)
 
     return bot
 }

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../bot/.idea/UniqueBots-Bot.iml" filepath="$PROJECT_DIR$/../bot/.idea/UniqueBots-Bot.iml" />
       <module fileurl="file://$PROJECT_DIR$/../frontend/.idea/UniqueBots-Frontend.iml" filepath="$PROJECT_DIR$/../frontend/.idea/UniqueBots-Frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/uniquebots-backend.iml" filepath="$PROJECT_DIR$/.idea/uniquebots-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../uniquebots-js-sdk/.idea/uniquebots-js-sdk.iml" filepath="$PROJECT_DIR$/../../uniquebots-js-sdk/.idea/uniquebots-js-sdk.iml" />
     </modules>
   </component>
 </project>

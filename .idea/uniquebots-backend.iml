@@ -11,5 +11,6 @@
     <orderEntry type="library" name="@types/node" level="application" />
     <orderEntry type="module" module-name="UniqueBots-Bot" />
     <orderEntry type="module" module-name="UniqueBots-Frontend" />
+    <orderEntry type="module" module-name="uniquebots-js-sdk" />
   </component>
 </module>

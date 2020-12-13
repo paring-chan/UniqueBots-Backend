@@ -40,7 +40,7 @@ type Bot {
     description: String!
     avatar: String
     prefix: String!
-    invite: String!
+    invite: String
     locked: Boolean!
     discordVerified: Boolean!
     owner: User!

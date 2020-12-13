@@ -86,5 +86,6 @@ module.exports = {
     heartClicked: async (parent, args, ctx) => {
         if (!ctx.user) return false
         return Boolean(await Heart.findOne({from: ctx.user.meta.id, to: parent.id}))
-    }
+    },
+    invite: parent => !parent.locked && parent.invite
 }
