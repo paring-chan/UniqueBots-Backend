@@ -14,14 +14,25 @@ module.exports = async (parent, {page=1, sort, queryType, query}) => {
             break
         default:
         case 'hearts':
-            bot.sort((a, b) => b.heartCount-a.heartCount)
+            bot.sort((a, b) => {
+                if (a.heartCount > b.heartCount) {
+                    return 1
+                }
+                if (a.heartCount === b.heartCount) {
+                    if (a.guilds > b.guilds) {
+                        return 1
+                    }
+                }
+                return -1
+            })
+            bot.reverse()
             break
     }
 
     if (queryType && query) {
         switch (queryType) {
             case 'plain':
-                bot = bot.filter(r => r.tag.includes(query) || r.name.includes(query) || r.brief.includes(query) || r.description.includes(query) || r.id === query)
+                bot = bot.filter(r => r.tag?.includes(query) || r.name?.includes(query) || r.brief?.includes(query) || r.description?.includes(query) || r.id === query)
                 break
             case 'regex':
                 query = new RegExp(query)
