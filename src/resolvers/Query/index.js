@@ -4,5 +4,5 @@ module.exports = {
     user: require('./user'),
     bot: require('./bot'),
     bots: require('./bots'),
-    botAccount: require('./botAccount')
+    botAccount: require('./botAccount'),
 }

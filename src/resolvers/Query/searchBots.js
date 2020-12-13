@@ -2,7 +2,7 @@ const Bot = require("../../models/Bot");
 const fetchBot = require('../../util/fetchBot')
 const _ = require('lodash')
 
-module.exports = async (parent, {page=1, sort, queryType, query}) => {
+module.exports = async (parent, {page=1, query, type, sort}) => {
     /**
      * @type {Array}
      */
@@ -18,16 +18,14 @@ module.exports = async (parent, {page=1, sort, queryType, query}) => {
             break
     }
 
-    if (queryType && query) {
-        switch (queryType) {
-            case 'plain':
-                bot = bot.filter(r => r.tag.includes(query) || r.name.includes(query) || r.brief.includes(query) || r.description.includes(query) || r.id === query)
-                break
-            case 'regex':
-                query = new RegExp(query)
-                bot = bot.filter(r => query.test(r.name) || query.test(r.brief) || query.test(r.description) || query.test(r.tag))
-                break
-        }
+    switch (type) {
+        case 'plain':
+            bot = bot.filter(r => r.tag.includes(query) || r.name.includes(query) || r.brief.includes(query) || r.description.includes(query) || r.id === query)
+            break
+        case 'regex':
+            query = new RegExp(query)
+            bot = bot.filter(r => query.test(r.name) || query.test(r.brief) || query.test(r.description) || query.test(r.tag))
+            break
     }
 
     const chunked = _.chunk(bot, 12)

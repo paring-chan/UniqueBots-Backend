@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/resolvers/Query/searchBots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
@@ -100,13 +101,13 @@
         <option value="GraphQL File" />
         <option value="SCSS File" />
         <option value="TypeScript JSX File" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../uniquebots-js-sdk" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lKHvZcdvMoDiE9fA35QNSz4Rlw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -204,7 +205,7 @@
       <workItem from="1607687587958" duration="6392000" />
       <workItem from="1607734004956" duration="24523000" />
       <workItem from="1607771423874" duration="9489000" />
-      <workItem from="1607819259645" duration="4764000" />
+      <workItem from="1607819259645" duration="6097000" />
     </task>
     <servers />
   </component>

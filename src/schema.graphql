@@ -3,12 +3,17 @@ type Mutation {
     addBot(id: String!, brief: String!, description: String!, prefix: String!, invite: String, library: String!): Boolean
 }
 
+enum SearchType {
+    regex
+    plain
+}
+
 type Query {
     me: User
     admin: Admin
     user(id: String!): User
     bot(id: String!): Bot
-    bots(page: Int, sort: BotSortUnit): PaginatedBotList!
+    bots(page: Int, sort: BotSortUnit, queryType: SearchType, query: String): PaginatedBotList!
     botAccount: BotAccount
 }
 
@@ -102,6 +107,7 @@ type Audit {
 
 enum BotSortUnit {
     servers
+    hearts
 }
 
 type BotAccount {
