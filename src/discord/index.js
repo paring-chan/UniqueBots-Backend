@@ -136,11 +136,11 @@ router.post('/', verify, async (req, res) => {
 
         judge.pending = false
 
-        judge.false = true
+        judge.approved = false
 
         judge.reason = reason
 
-        await parent.save()
+        await judge.save()
 
         await evaluate(`
         (async () => {
