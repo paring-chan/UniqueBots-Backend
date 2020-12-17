@@ -83,7 +83,8 @@ module.exports = {
         }
         return true
     },
-    heartClicked: async (parent, {user=ctx.user?.id}, ctx) => {
+    heartClicked: async (parent, {user}, ctx) => {
+        user = user || ctx.user?.id
         if (!user) return false
         return Boolean(await Heart.findOne({from: user, to: parent.id}))
     },
