@@ -83,9 +83,9 @@ module.exports = {
         }
         return true
     },
-    heartClicked: async (parent, args, ctx) => {
-        if (!ctx.user) return false
-        return Boolean(await Heart.findOne({from: ctx.user.meta.id, to: parent.id}))
+    heartClicked: async (parent, {user=ctx.user?.id}, ctx) => {
+        if (!user) return false
+        return Boolean(await Heart.findOne({from: user, to: parent.id}))
     },
     invite: (parent, args, ctx) => {
         if (parent.owner === ctx.user?.meta?.id) {

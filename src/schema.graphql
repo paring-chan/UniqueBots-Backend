@@ -55,7 +55,7 @@ type Bot {
     library: String!
     heartCount: Int!
     toggleHeart: Boolean!
-    heartClicked: Boolean!
+    heartClicked(user: String): Boolean!
 }
 
 type AdminBot {
