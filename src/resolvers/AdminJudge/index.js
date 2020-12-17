@@ -48,7 +48,7 @@ module.exports = {
 
         parent.pending = false
 
-        parent.false = true
+        parent.approved = false
 
         parent.reason = reason
 

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc01746-fe9e-46e6-98ff-aeff1e05501a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../uniquebots-js-sdk/test/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
@@ -50,14 +48,17 @@
       <change beforePath="$PROJECT_DIR$/src/util/bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/fetchBot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/fetchBot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/rateLimitHandle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/rateLimitHandle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.postcssrc" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.postcssrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/apollo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AdminSidebar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/CustomPagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/CustomPagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Experiment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Experiment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ExperimentsDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ExperimentsDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ExperimentsMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ExperimentsMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/LayoutProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/LayoutProvider.jsx" afterDir="false" />
@@ -66,6 +67,7 @@
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/UserMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/UserMenu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/declarations.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/declarations.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/markdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/markdown.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/queries.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/util/adminOnly.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/util/adminOnly.js" afterDir="false" />
@@ -80,8 +82,10 @@
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Admin/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Bot/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Discord.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Discord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/Experimental.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/Experimental.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/Original.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/Original.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/home.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/views/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/Bot/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/ManagePanel/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/views/NotFound.js" afterDir="false" />
@@ -101,9 +105,9 @@
       <list>
         <option value="GraphQL File" />
         <option value="SCSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -141,6 +145,7 @@
       <recent name="C:\Users\CHINO\Desktop\uniquebots-backend\src\resolvers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src\views\ManagePanel\Bot" />
       <recent name="C:\Users\CHINO\Desktop\uniquebots\frontend\src\views\Admin\Bots" />
     </key>
@@ -206,7 +211,8 @@
       <workItem from="1607687587958" duration="6392000" />
       <workItem from="1607734004956" duration="24523000" />
       <workItem from="1607771423874" duration="9489000" />
-      <workItem from="1607819259645" duration="9822000" />
+      <workItem from="1607819259645" duration="26632000" />
+      <workItem from="1608205136632" duration="1369000" />
     </task>
     <servers />
   </component>

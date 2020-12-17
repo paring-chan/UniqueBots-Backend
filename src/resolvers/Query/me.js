@@ -1,3 +1,3 @@
 module.exports = async (_, args, ctx) => {
-    return ctx.user.meta
+    return ctx.user?.meta
 }

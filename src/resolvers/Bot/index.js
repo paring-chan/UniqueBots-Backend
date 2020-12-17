@@ -48,7 +48,7 @@ module.exports = {
         return true
     }),
     token: async (parent, args, ctx) => {
-        if (ctx.user.meta.id !== parent.owner) return null
+        if (!ctx.user || ctx.user.meta.id !== parent.owner) return null
 
         if (!parent.token) {
             parent.token = jwt.sign({id: parent.id}, config.botTokenSecret, {
@@ -61,7 +61,7 @@ module.exports = {
         return parent.token
     },
     regenerateToken: async (parent, args, ctx) => {
-        if (ctx.user.meta.id !== parent.owner) return false
+        if (!ctx.user || ctx.user.meta.id !== parent.owner) return false
 
         parent.token = jwt.sign({id: parent.id}, config.botTokenSecret, {
             expiresIn: (1000 * 60 * 60 * 24 * 365)
@@ -87,5 +87,11 @@ module.exports = {
         if (!ctx.user) return false
         return Boolean(await Heart.findOne({from: ctx.user.meta.id, to: parent.id}))
     },
-    invite: parent => !parent.locked && parent.invite
+    invite: (parent, args, ctx) => {
+        if (parent.owner === ctx.user?.meta?.id) {
+            return parent.invite
+        } else {
+            return !parent.locked && parent.invite
+        }
+    }
 }
